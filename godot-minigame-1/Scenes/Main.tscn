@@ -10,7 +10,7 @@
 offset_right = 302.0
 offset_bottom = 89.0
 size_flags_horizontal = 3
-color = Color(0, 0, 0, 0.32941177)
+color = Color(0, 0, 0, 0.329412)
 
 [node name="MarginContainer" type="MarginContainer" parent="UI"]
 layout_mode = 0
@@ -41,12 +41,14 @@ text = "##"
 script = ExtResource("4_rgh2o")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.9408867, 0, -0.33872154, 0.26964808, 0.6051968, 0.74901736, 0.20499314, -0.796076, 0.5694215, 0, 10, 0)
+transform = Transform3D(0.940887, 0, -0.338722, 0.269648, 0.605197, 0.749017, 0.204993, -0.796076, 0.569422, 0, 10, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_kln2b")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.5906524, 1.7738466, 5.118198)
+transform = Transform3D(-4.37114e-08, 0, -0.99999994, 0, 0.99999994, 0, 1, 1.7763568e-15, -4.3711395e-08, -1.1423585, 1.94662, 5.6656284)
+collision_layer = 7
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 0.91969824, 0.39262608, 0, -0.39262608, 0.91969824, -0.31240737, 2.45037, 3.2369843)
+transform = Transform3D(1, 0, -3.5527137e-15, 0, 0.91969824, 0.39262608, 0, -0.39262608, 0.91969824, -0.12623644, 1.5968494, 2.0402944)
 
 [node name="Level" parent="." instance=ExtResource("2_kln2b")]
+transform = Transform3D(0.99999994, 0, -3.5527137e-15, 0, 0.99999994, 0, 0, -3.3940607e-30, 1, 0.06749731, 0.2931491, 0.54136705)
